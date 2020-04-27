@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'csv'
+gem 'dotenv'
+ruby '2.5.1'
+gem 'pry'
+gem 'puma'
+gem 'rack'
+gem 'rspec'
+gem 'rubocop', '~> 0.57.2'
+gem 'sinatra'
+gem 'shotgun'

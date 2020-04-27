@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>See your gossip</title>
+  </head>
+  <body>
+    <h1>Here's your gossip</h1>
+    <% gossips.each do |gossip| %>
+        <p> Gossip # <%= id%><br/>
+        Author: <%= gossip.author %><br/>
+        Content: <%= gossip.content %>
+        </p>
+    <% end %>
+
+    <a href="<%= id%>/edit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Edit this gossip</a>
+    
+      <a href="/">Return to main page</a>
+
+
+  </body>
+</html>

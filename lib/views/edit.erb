@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Editing Section</title>
+  </head>
+  <body>
+    <h1>Edit your gossip</h1>
+    <h2>Gossips</h2>
+   
+   <form action='/gossips/edit/' method='POST'> 
+        <% gossips.each do |gossip| %>
+            Modify the author:  <input type='text' name='gossip_author' value="<%= gossip.author %>" /><br/> 
+            Modify the gossip : <input type='text' name='gossip_content' value="<%= gossip.content %>" /><br/> 
+         <% end %>
+        <input type='hidden' name='id' value='<%= id %>'/>
+        <input class="btn btn-primary" type='submit'/> 
+    </form> 
+
+  
+  </body>
+</html>

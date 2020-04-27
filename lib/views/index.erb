@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Welcome to the Gossip Project</h1>
+    <a href="/gossips/new/">Add a new gossip</a>
+
+    <h2>Latest gossips:</h2>
+   
+ <% gossips.each_with_index do |gossip,index| %>
+      <p>
+        <a href="/gossips/<%= (index+1) %>"><%= gossip.author %></a><br/>
+        <%= gossip.content %>
+      </p>
+    <% end %>
+
+  
+  </body>
+</html>
